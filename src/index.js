@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import Header from './Header';
+import Footer from './Footer';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Header />, document.getElementById('header'));
+ReactDOM.render(<Header happy={'Счастливого пути!'}/>, document.getElementById('header'));
+ReactDOM.render(<Footer text={'Booking (c) Все права защищены'}/>, document.getElementById('footer'));
 
 
 

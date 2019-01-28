@@ -8,7 +8,7 @@ class Header extends Component {
                 <nav className="navbar navbar-dark bg-dark">
                     <div className="container">
                         <a className="navbar-brand ml-3" href='#'>Booking</a>
-                        <span className="navbar-text">Счастливого пути!</span>
+                        <span className="navbar-text">{this.props.happy}</span>
                         <form className="form-inline">
                             <input className="form-control mr-sm-2" type="search" placeholder="Откуда"
                                    aria-label="Search"/>
