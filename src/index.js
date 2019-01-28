@@ -9,7 +9,7 @@ import ContentItems from './ContentItems';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Header happy={'Счастливого пути!'}/>, document.getElementById('header'));
-ReactDOM.render(<Footer text={'Booking (c) Все права защищены'}/>, document.getElementById('footer'));
+
 
 const company = (<div>
     <Sidebar name="Кыргызстан Аба Жолдору" />
@@ -19,7 +19,18 @@ const company = (<div>
 </div>);
 ReactDOM.render(company, document.getElementById('sidebar'));
 
+ReactDOM.render(<Content text={'Билеты по лучшим направлениям! Бронируй сейчас!'}/>, document.getElementById('content'));
 
+const fly = (<div>
+    <ContentItems direction={'Бишкек - Алматы'} company={'Air Astana'} price={'20$'} date={'30 января 2019'} />
+    <ContentItems direction={'Бишкек - Ташкент'} company={'Кыргызстан Аба Жолдору'} price={'20$'} date={'30 января 2019'} />
+    <ContentItems direction={'Бишкек - Караганда'} company={'Air Astana'} price={'70$'} date={'30 января 2019'} />
+    <ContentItems direction={'Бишкек - Красноярск'} company={'Aeroflot'} price={'200$'} date={'30 января 2019'} />
+
+</div>);
+ReactDOM.render(fly, document.getElementById('contentitem'));
+
+ReactDOM.render(<Footer text={'Booking (c) Все права защищены'}/>, document.getElementById('footer'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
